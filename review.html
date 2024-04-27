@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Reviews</title>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
+    <script src="https://kit.fontawesome.com/44f557ccce.js"></script>
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/log2.png" type="image/svg+xml">
+
+    <!-- 
+  - custom css link
+-->
+    <link rel="stylesheet" href="./assets/css/details.css">
+
+    <!-- 
+  - google font link
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            display: flex;
+            height: 100vh;
+        }
+        
+        .rev-section {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            margin: auto;
+            padding: 0 1rem;
+            max-width: 1100px;
+            text-align: center;
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+            margin-bottom: .5rem;
+        }
+        
+        .note {
+            font-size: 1.1rem;
+            color: rgb(150, 150, 150);
+            font-style: italic;
+            color: red;
+            font
+        }
+        
+        .reviews {
+            margin: 2rem auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .review {
+            margin: 0 1rem;
+            min-width: 300px;
+            flex: 1;
+        }
+        
+        .head-review {
+            margin: 1.75rem auto;
+            width: 150px;
+            height: 150px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+        }
+        
+        .body-review {
+            background-color: rgb(238, 238, 238);
+            padding: 2.5rem;
+            box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+        }
+        
+        .name-review {
+            font-size: 1.5rem;
+            color: rgb(50, 50, 50);
+            margin-bottom: .25rem;
+        }
+        
+        .place-review {
+            color: red;
+            font-style: italic;
+        }
+        
+        .rating {
+            color: rgb(253, 180, 42);
+            margin: 1rem 0;
+        }
+        
+        .desc-review {
+            line-height: 1.5rem;
+            letter-spacing: 1px;
+            color: rgb(0, 0, 0);
+        }
+        
+        @media (max-width: 678px) {
+            .review {
+                margin-top: 1.5rem;
+            }
+            .rev-section {
+                position: absolute;
+                top: 10%;
+                left: -1%;
+                margin: auto;
+                padding: 0 1rem;
+                max-width: 1100px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body id="top" class="dark_theme">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <h1 class="h1 logo">
+                <a href="#">REVIEWS<span>.</span></a>
+            </h1>
+
+            <div class="navbar-actions">
+
+                <!-- <select name="language" id="lang">
+      <option value="en">En</option>
+      <option value="ar">Ar</option> -->
+                </select>
+
+                <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+      <span class="icon"></span>
+    </button>
+
+            </div>
+
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+  </button>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="index.html" class="navbar-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="details.html" class="navbar-link">Details</a>
+                    </li>
+
+                    <!-- <li>
+        <a href="#skills" class="navbar-link">Skills.</a>
+      </li>
+
+      <li>
+        <a href="#portfolio" class="navbar-link">Portfolio.</a>
+      </li>
+
+      <li>
+        <a href="#contact" class="navbar-link">Contact.</a>
+      </li> -->
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!-- reviews -->
+    <div class="rev-section">
+        <!-- 
+        <h2 class="title">Our Guests Love Us</h2>
+        <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laboriosam possimus perferendis non error neque.</p> -->
+
+        <div class="reviews">
+
+            <div class="review">
+                <div class="head-review">
+                    <img src="./assets/images/me.png" width="250px">
+                </div>
+                <div class="body-review">
+                    <div class="name-review">Clint Lorence</div>
+                    <div class="place-review">Medina</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="head-review">
+                    <img src="./assets/images/ureka1 (3).png" width="250px">
+                </div>
+                <div class="body-review">
+                    <div class="name-review">William</div>
+                    <div class="place-review">Gingoog</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="head-review">
+                    <img src="./assets/images/ureka1 (1).png" width="250px">
+                </div>
+                <div class="body-review">
+                    <div class="name-review">Jay</div>
+                    <div class="place-review">Sangalan</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        'use strict';
+
+        /**
+         * element toggle function
+         */
+
+        const elemToggleFunc = function(elem) {
+            elem.classList.toggle("active");
+        }
+
+
+
+        /**
+         * header sticky & go to top
+         */
+
+        const header = document.querySelector("[data-header]");
+        const goTopBtn = document.querySelector("[data-go-top]");
+
+        window.addEventListener("scroll", function() {
+
+            if (window.scrollY >= 10) {
+                header.classList.add("active");
+                goTopBtn.classList.add("active");
+            } else {
+                header.classList.remove("active");
+                goTopBtn.classList.remove("active");
+            }
+
+        });
+
+
+
+        /**
+         * navbar toggle
+         */
+
+        const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+        const navbar = document.querySelector("[data-navbar]");
+
+        navToggleBtn.addEventListener("click", function() {
+
+            elemToggleFunc(navToggleBtn);
+            elemToggleFunc(navbar);
+            elemToggleFunc(document.body);
+
+        });
+
+
+
+        /**
+         * skills toggle
+         */
+
+        const toggleBtnBox = document.querySelector("[data-toggle-box]");
+        const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
+        const skillsBox = document.querySelector("[data-skills-box]");
+
+        for (let i = 0; i < toggleBtns.length; i++) {
+            toggleBtns[i].addEventListener("click", function() {
+
+                elemToggleFunc(toggleBtnBox);
+                for (let i = 0; i < toggleBtns.length; i++) {
+                    elemToggleFunc(toggleBtns[i]);
+                }
+                elemToggleFunc(skillsBox);
+
+            });
+        }
+
+
+
+        /**
+         * dark & light theme toggle
+         */
+
+        const themeToggleBtn = document.querySelector("[data-theme-btn]");
+
+        themeToggleBtn.addEventListener("click", function() {
+
+            elemToggleFunc(themeToggleBtn);
+
+            if (themeToggleBtn.classList.contains("active")) {
+                document.body.classList.remove("dark_theme");
+                document.body.classList.add("light_theme");
+
+                localStorage.setItem("theme", "light_theme");
+            } else {
+                document.body.classList.add("dark_theme");
+                document.body.classList.remove("light_theme");
+
+                localStorage.setItem("theme", "dark_theme");
+            }
+
+        });
+
+        /**
+         * check & apply last time selected theme from localStorage
+         */
+
+        if (localStorage.getItem("theme") === "light_theme") {
+            themeToggleBtn.classList.add("active");
+            document.body.classList.remove("dark_theme");
+            document.body.classList.add("light_theme");
+        } else {
+            themeToggleBtn.classList.remove("active");
+            document.body.classList.remove("light_theme");
+            document.body.classList.add("dark_theme");
+        }
+    </script>
+</body>
+
+</html>
