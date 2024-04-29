@@ -61,11 +61,24 @@
     margin-top: -0.90em;
 }
 
+iframe {
+    width: 150%;
+    margin-left: 20%;
+}
+
 @media (min-width: 250px) {
     .vids {
         position: absolute;
         margin-left: -14em;
         margin-top: -5em;
+    }
+    .project {
+        padding-block: var(--section-padding);
+        margin-top: 30px;
+    }
+    iframe {
+        width: 150%;
+        margin-left: 10%;
     }
 }
 
